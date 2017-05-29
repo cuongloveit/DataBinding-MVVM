@@ -2,10 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-
+        <import type="android.graphics.Color"/>
         <variable
             name="profile"
             type="sg.vinova.mvvmdemo.Profile" />
+
+
     </data>
 
     <LinearLayout
@@ -21,7 +23,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@{Color.BLUE}"
             android:text="@{@string/phone(profile.phone)}" />
-        <!--@{String.format(@string/phone,profile.phone)}-->
+
     </LinearLayout>
+
 </layout>
